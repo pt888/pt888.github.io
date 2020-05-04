@@ -1,0 +1,453 @@
+/*body-styling*/
+body{
+	width:100%;
+	height:100%;
+	background-color:#0A0A2A;
+}
+.structure{
+	width:100%;
+	height:100%;
+	background-color:#0A0A2A;
+}
+
+/*class containing left side for seperate scroll than playlist*/
+.left{
+	height:100%;
+	width:70%;
+	max-height:870px;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.left::-webkit-scrollbar{
+	display:none;
+}
+
+/* set of styles for top navigation bar*/
+.navigation{
+	height:17vh;
+	width:100%;
+	/*background-color:white;*/
+	background-color:#0A0A2A;
+	margin-left:3vw;
+	display:flex;
+}
+/*set of styles for class icons present inside nav bar*/
+.icons{
+	height:7vh;
+	width:50vw;
+	display:inline;
+}
+/*style for text present in nav par*/
+.icons>p{
+	font-size:22px;
+	margin-left:120px;
+	margin-top:-66px;
+	color:white;
+}
+/*styling of image present inside icons class*/
+.icons img{
+	margin-top:1vh;
+	margin-left:2vw;
+	height:10vh;
+	width:10vh;
+	border:0.2px solid black;
+	border-radius:50%;
+}
+/*styling of text under id fav*/
+#fav{
+	margin-left:300px;
+	margin-top:-66px;
+	font-size:22px;
+	font-family:Helvetica;
+	color:white;
+	opacity:0.6;
+}
+/*search-box*/
+.search-box{
+	position:absolute;
+	top:6%;
+	left:56%;
+	transform:translate(-50%,-50%);
+	background:transparent;
+	height:10px;
+	border-radius:50%;
+	padding:0px;
+}
+/*styling of search-btn under search-box*/
+.search-btn{
+	color:#3e5669;
+	float:right;
+	width:50px;
+	height:20px;
+	background:transparent;
+	border-radius:20%;
+	display:flex;
+	transition:0.4s;
+	justify-content:center;
+	align-items:center;
+}
+/*styling of search-txt under search-box*/
+.search-txt{
+	border:none;
+	background:none;
+	outline:none;
+	float:left;
+	padding:0;
+	color:white;
+	font-size:22px;
+	font-family: Helvetica;
+	transition:0.4s;
+	line-height:20px;
+	width:0px;
+}
+/*changes in search-txt when cursor hover over it*/
+.search-box:hover>.search-txt{
+	width:200px;
+	border:2px solid #0B0B3B;
+	padding:0px 6px;
+}
+/*changes in search-btn when cursor hover over it*/
+.search-box:hover>.search-btn{
+	background:transparent;
+}
+/*styling of bell icon in nav bar*/
+.bell{
+	font-size:20px;
+	color:white;
+	margin-left:20vw;
+	margin-top:4vh;
+}
+/*styling of profile in nav bar*/
+.profile{
+	margin-top:2vh;
+	margin-left:10vw;
+}
+.profile img{
+	height:50px;
+	width:50px;
+	border-radius:50%;
+}
+
+/*styling of section containing description of singer*/
+.mainphoto{
+	width:72%;
+	height:250px;
+	background:#0B0B3B;
+	margin-left:7vw;
+	display:flex;
+}
+.mainphoto img{
+	height:250px;
+	width:220px;
+	border-radius:0 0 50% 50%;
+}
+/*styling of content under singer info section*/
+.content{
+	line-height:0.8em;
+	margin-left:1.5vw;
+	color:white;
+}
+.text-opacity{
+	opacity:0.7;
+}
+.text-opacity1{
+	opacity:0.9;
+}
+.content p{
+	font-size:10px;
+	letter-spacing: 1px;
+	font-weight:100;
+}
+
+h2:after {
+  content:"851 Followers"; /* Unicode character for ">" */
+  font-size: 13px;
+  color:white;
+  float: right;
+  margin-right:15px;
+  opacity:0.7;
+}
+.content>button{
+	margin-top:3vh;
+	width:100px;
+	height:30px;
+	background-image:linear-gradient(to right,#08088A,#A901DB 60%);
+	border: none;
+	color:white;
+}
+h5{
+	margin-left:10vw;
+	margin-top:-7vh;
+}
+
+/*styling of table containing all the song of the singer*/
+.column{
+	width:72%;
+	height:7.5vh;
+	background:#0A1B2A;
+	margin-left:7vw;
+	display:flex;
+	margin-top:15px;
+}
+.column img{
+	height:6vh;
+	width:2.5vw;
+	margin-left:10px;
+	margin-top:5px;
+	float:left;
+}
+.song1{
+	color:white;
+	margin-left:4vw;
+	font-size:13px;
+	margin-top:12px;
+	width:10vw;
+	height:0.8vh;
+}
+.left-side{
+	margin-left:0.1vw;
+}
+.song{
+	color:white;
+	margin-left:10px;
+	font-size:13px;
+	margin-top:20px;
+
+}
+.sing{
+	font-size:10px;
+	color:white;
+	margin-left:4vw;
+	margin-top:5px;
+	
+}
+.like{
+	color:white
+}
+.add{
+	color:white;
+	margin-left:20px;
+}
+.side{
+	display:flex;
+	margin-left:30vw;
+}
+
+/*aside section containing queue*/
+aside{
+	margin-left:58%;
+	width:31%;
+	margin-top:-58%;
+	max-height:870px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+aside::-webkit-scrollbar{
+	display:none;
+}
+aside .h2{
+	font-size:20px;
+	font-weight:bold;
+	color:white;
+}
+.h2:after{
+	content:"View All";
+	opacity:0.6;
+	font-size: 13px;
+    color:white;
+    float: right;
+    margin-left: 5px;
+}
+aside .aside-img{
+	margin-left:10px;
+	display:flex;
+}
+.aside-img img{
+	height:80px;
+	width:80px;
+	margin-top:20px;
+	margin-left:10px;
+}
+.aside-song{
+    margin-left:2vw;
+    font-size:15px;
+    color:white;
+    width:7vw;
+    margin-top:30px;
+}
+.aside-sing{
+    margin-left:2vw;
+    margin-top:10px;
+    font-size:10px;
+    color:white;
+    opacity:0.5;
+}
+.aside-left{
+	margin-left:13.5vw;
+	margin-top:20px;
+}
+.aside-dot {
+  height:3px;
+  width: 3px;
+  background-color:white;
+  border-radius: 50%;
+  display: inline-block;
+}
+.aside-time{
+	font-size:10px;
+	font-family: Helvetica;
+	color:white;
+}
+.part2{
+	margin-top:60px;
+}
+aside .aside-img2{
+	margin-left:10px;
+	display:flex;
+}
+.aside-img2 img{
+	height:60px;
+	width:60px;
+	margin-top:20px;
+	margin-left:10px;
+}
+.aside-like{
+	color:white;
+}
+.aside-left2{
+	margin-left:12vw;
+	margin-top:4vh;
+}
+.number{
+	margin-top:5vh;
+	color:white;
+}
+
+/*bottom music player*/
+.footer{
+	background:#232222;
+	height:11vh;
+	width:100%;
+	display:flex;
+    margin-top:2vh;
+}
+/*section in footer containing song info*/
+#singer-container{
+	color:white;
+	margin-left:12.5vw;
+	margin-top:-11vh;
+}
+#song-container img{
+	height:75px;
+	width:75px;
+	margin-top:8px;
+	margin-left:7vw;
+}
+#singer-container .song{
+    font-size:15px;
+}
+#singer-container .sing{
+	margin-top:-5px;
+	font-size:12px;
+}
+#song-container .like{
+	margin-top:-7.7vh;
+	margin-left:18.5vw;
+	color:white;
+	opacity:0.4;
+	font-size:20px;
+}
+#song-container .circle{
+	color:white;
+	margin-top:-7vh;
+	margin-left:20.5vw;
+	font-size:25px;
+	opacity:0.4;
+}
+/*section in footer containing all the icons of playlist*/
+.tools{
+	display:flex;
+	margin-top:2vh;
+	margin-left:16vw;
+}
+.tools span{
+	margin-left:3vw;
+	color:#848484;
+	font-size:20px;
+}
+.bar{
+	margin-left:-27vw;
+	margin-top:8vh;
+    display:flex;
+    margin-right:10px;
+}
+.total-bar{
+	width:30rem;
+	height:0.3rem;
+	background-color:#848484;
+	border-radius:0.8rem;
+	display:flex;
+}
+.colored-bar{
+	width:40%;
+	border-radius:20px 0px 0px 20px;
+	height:inherit;
+	background-color:#01DF74;
+}
+.start-time{
+	color:white;
+	margin-right:10px;
+	margin-top:-5px;
+	font-size:15px;
+	opacity:0.5;
+}
+.end-time{
+	color:white;
+	margin-left:10px;
+	margin-top:-5px;
+	font-size:15px;
+	opacity:0.5;
+}
+.colored-circle{
+	font-size:15px;
+	color:white;
+	border-radius:50%;
+	margin-top:-5px;
+}
+/*section for icons present at one side of footer*/
+.tools-side{
+	margin-left:8vw;
+	margin-top:4vh;
+	display:flex;
+}
+.tools-side span{
+	margin-left:1vw;
+	color:#848484;
+	font-size:20px;
+}
+.tools-side .small-bar{
+    display:flex;
+    margin-left:1vw;
+    margin-top:8px;
+}
+.tools-side .small-total-bar{
+	width:5rem;
+	height:0.3rem;
+	background-color:#848484;
+	border-radius:0.8rem;
+	display:flex;
+}
+.tools-side .small-colored-bar{
+	width:30%;
+	border-radius:20px 0px 0px 20px;
+	height:inherit;
+	background-color:#A5DF00;
+	margin-left:-2px;
+}
+.tools-side .small-colored-circle{
+	font-size:16px;
+	color:white;
+	border-radius:50%;
+	margin-top:-5px;
+	margin-left:-0.5vw;
+}
